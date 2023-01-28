@@ -53,7 +53,7 @@ client.on('interactionCreate', async interaction => {
 
       const embed = new EmbedBuilder()
 			.setColor(0x0099FF)
-			.setTitle('กรุณาเลือกเมนูการทำงาน :')
+			.setTitle('กรุณาเลือกเมนูการทำงาน : จุ๊กรู้วๆ')
 
 		await interaction.reply({ content: 'ข้อความแสดงผล', embeds: [embed], components: [row] });
 
