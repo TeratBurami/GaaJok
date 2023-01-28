@@ -78,15 +78,14 @@ client.on(Events.InteractionCreate, async interaction => {
     await interaction.deleteReply();
 
 	}else if(selected==='third_option'){
-		const row = new ActionRowBuilder()
-			.addComponents(
-				new ButtonBuilder()
-					.setCustomId('primary')
-					.setLabel('Click me!')
-					.setStyle(ButtonStyle.Primary),
-			);
+		const beam = new ButtonBuilder()
+			.setCustomId('primary')
+			.setLabel('Click me!')
+			.setStyle(ButtonStyle.Primary)
 
-		await interaction.reply({ content: 'test', components: [row] });
+		await interaction.reply({ content: 'test', components: [beam] });
+
+	
 	
 
   }else if(selected==='fourth_option'){
@@ -97,4 +96,4 @@ client.on(Events.InteractionCreate, async interaction => {
 });
 
 
-client.login('MTA2ODUzOTc2NDAwMjc4NzM0OA.G8ezL7.-Sc-5gjDFvqgHqcf3MJ9HHhvayzbCtL2QwqiPg');
+client.login('MTA2ODUzOTc2NDAwMjc4NzM0OA.GsNCxg.Vee_UTX3Uq0yyc3gfyF103EbRPqdhQpyzc75W4');
